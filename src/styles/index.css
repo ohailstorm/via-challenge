@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+    border-radius: 0px !important;
+    line-height: 60px;
+    background-color: #2f2f2f;
+    color: white;
+    margin-bottom: 0px;
+}
