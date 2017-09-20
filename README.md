@@ -7,7 +7,7 @@ State management is handled by Redux, and since the application has some asynchr
 
 Some assumptions were made during the development. For one, it is assumed that all series will have a details endpoint at `/series/:slug`, where the slug is provided as part of the `/serier/samtliga` api response in the form of a `publicPath`. In a more extensive application, the details data from a series would probably include more info about each season, and potentially involve more api calls on a details page. In this app however, the same info you can get from a details api call can also be preloaded from the main series list, if navigation occurs within the app. To support deep-linking in the app, a call to `/series/:slug` will be made, instead of fetching all series and looping through them.
 
-For the hero images, it is a assumed that the urls (template) contain a `?{height,width,token}`. As no information has been provided about the usage of those parameters, they are removed from the url in the application, to allow the app to display a hero image on the details page.
+For the hero images, it is a assumed that the urls (template) contain a `{?width,height,token}`. As no information has been provided about the usage of those parameters, they are removed from the url in the application, to allow the app to display a hero image on the details page.
 
 ### Improvements
 
